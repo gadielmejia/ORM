@@ -1,0 +1,70 @@
+MYSQL_HOST=127.0.0.1
+MYSQL_PORT=3306
+MYSQL_USER=root
+MYSQL_PASSWORD=
+MYSQL_DATABASE=musigest
+
+SECRET_KEY=123456789
+
+
+
+py --version
+
+py -m venv venv 
+
+source venv/Scripts/activate
+
+
+
+Instalar flask:
+    python -m pip install flask
+Instalamos dependencias:
+    python -m pip install flask-sqlalchemy
+    python -m pip install marshmallow_sqlalchemy
+    python -m pip install flask-migrate
+    python -m pip install flask-mysqldb  
+    python -m pip install pymysql
+    pip install python-dotenv
+
+creo la base de datos para poder configurar el .env 
+.env:
+      " venv/
+      __pycache__/
+      .env "
+
+ 
+
+Creamos el archivo requirements.txt
+    pip freeze > requirements.txt
+
+
+
+    
+//Borrar migrations//
+
+1. Borrar migrations
+2. Borrar base de datos del workbench
+3. Volverla a crear en workbench
+4.
+    flask db init
+5. 
+    flask db migrate
+6. 
+    flask db upgrade
+
+
+//Crea el Administrador// 
+--Tiene que crearce despues de hacer los comando de flask db--
+
+python seed.py
+
+
+instalar JWT 
+    pip install Flask-JWT-Extended
+
+pip freeze > requirements.txt
+
+
+Para desactivar el entorno es:
+    deactivate
+
